@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anatomy Lesson - MedEdu</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'medical-blue': '#3a8edc',
+                        'subtle-green': '#a3d9a5',
+                    },
+                    fontFamily: {
+                        'inter': ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50 font-inter">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex">
+                    <div class="flex-shrink-0 flex items-center">
+                        <a href="index.html" class="flex items-center">
+                            <i class="fas fa-stethoscope text-medical-blue text-3xl mr-2"></i>
+                            <span class="text-2xl font-bold text-medical-blue">MedEdu</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <button class="text-gray-600 hover:text-medical-blue">
+                        <i class="fas fa-bookmark text-xl"></i>
+                    </button>
+                    <button class="text-gray-600 hover:text-medical-blue">
+                        <i class="fas fa-bell text-xl"></i>
+                    </button>
+                    <div class="relative">
+                        <img src="https://ui-avatars.com/api/?name=Medical+Student&background=3a8edc&color=fff" 
+                             alt="Profile" 
+                             class="w-8 h-8 rounded-full cursor-pointer">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Breadcrumb -->
+    <div class="bg-white border-b">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3">
+            <div class="flex items-center space-x-2 text-sm text-gray-600">
+                <a href="index.html" class="hover:text-medical-blue">Home</a>
+                <i class="fas fa-chevron-right text-xs"></i>
+                <a href="#" class="hover:text-medical-blue">Year 1</a>
+                <i class="fas fa-chevron-right text-xs"></i>
+                <span class="text-gray-900">Anatomy</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            <!-- Left Sidebar - Course Navigation -->
+            <div class="lg:col-span-1">
+                <div class="bg-white rounded-xl shadow-md p-6">
+                    <h2 class="text-xl font-bold text-gray-800 mb-4">Course Content</h2>
+                    <div class="space-y-4">
+                        <div class="border-l-4 border-medical-blue pl-4">
+                            <h3 class="font-medium text-medical-blue">Chapter 1: Introduction</h3>
+                            <ul class="mt-2 space-y-2 text-sm">
+                                <li class="flex items-center text-gray-600">
+                                    <i class="fas fa-check-circle text-subtle-green mr-2"></i>
+                                    Basic Terminology
+                                </li>
+                                <li class="flex items-center text-gray-900 font-medium">
+                                    <i class="fas fa-play-circle text-medical-blue mr-2"></i>
+                                    Body Systems Overview
+                                </li>
+                                <li class="flex items-center text-gray-600">
+                                    <i class="far fa-circle mr-2"></i>
+                                    Anatomical Positions
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="border-l-4 border-gray-200 pl-4">
+                            <h3 class="font-medium text-gray-600">Chapter 2: Skeletal System</h3>
+                            <ul class="mt-2 space-y-2 text-sm text-gray-600">
+                                <li class="flex items-center">
+                                    <i class="far fa-circle mr-2"></i>
+                                    Bone Structure
+                                </li>
+                                <li class="flex items-center">
+                                    <i class="far fa-circle mr-2"></i>
+                                    Major Bones
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Main Content Area -->
+            <div class="lg:col-span-2">
+                <div class="bg-white rounded-xl shadow-md p-6 mb-8">
+                    <h1 class="text-3xl font-bold text-gray-900 mb-4">Body Systems Overview</h1>
+                    
+                    <!-- Video Section -->
+                    <div class="relative pt-[56.25%] rounded-xl overflow-hidden mb-8">
+                        <iframe 
+                            class="absolute top-0 left-0 w-full h-full"
+                            src="https://www.youtube.com/embed/videoseries?list=PLYcQeqQVY9VKBVzqPHUFwxJT8YhGOb4E_"
+                            title="Anatomy Lesson"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+
+                    <!-- Content -->
+                    <div class="prose max-w-none">
+                        <p class="text-gray-600 leading-relaxed mb-6">
+                            The human body is a complex and fascinating system made up of multiple interconnected systems 
+                            working together to maintain life. In this lesson, we'll explore the major body systems and 
+                            their primary functions.
+                        </p>
+
+                        <h2 class="text-2xl font-bold text-gray-900 mb-4">Learning Objectives</h2>
+                        <ul class="space-y-2 mb-6">
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-subtle-green mt-1 mr-2"></i>
+                                <span>Understand the basic organization of the human body</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-subtle-green mt-1 mr-2"></i>
+                                <span>Identify the major body systems and their components</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-subtle-green mt-1 mr-2"></i>
+                                <span>Describe how different body systems work together</span>
+                            </li>
+                        </ul>
+
+                        <!-- Download Resources -->
+                        <div class="bg-gray-50 rounded-xl p-6 mb-8">
+                            <h3 class="text-xl font-bold text-gray-900 mb-4">Resources</h3>
+                            <div class="space-y-4">
+                                <a href="#" class="flex items-center justify-between p-4 bg-white rounded-lg hover:shadow-md transition-shadow">
+                                    <div class="flex items-center">
+                                        <i class="fas fa-file-pdf text-red-500 text-2xl mr-3"></i>
+                                        <div>
+                                            <h4 class="font-medium text-gray-900">Lecture Notes</h4>
+                                            <p class="text-sm text-gray-600">PDF • 2.4 MB</p>
+                                        </div>
+                                    </div>
+                                    <i class="fas fa-download text-gray-400"></i>
+                                </a>
+                                <a href="#" class="flex items-center justify-between p-4 bg-white rounded-lg hover:shadow-md transition-shadow">
+                                    <div class="flex items-center">
+                                        <i class="fas fa-file-powerpoint text-orange-500 text-2xl mr-3"></i>
+                                        <div>
+                                            <h4 class="font-medium text-gray-900">Presentation Slides</h4>
+                                            <p class="text-sm text-gray-600">PPTX • 5.1 MB</p>
+                                        </div>
+                                    </div>
+                                    <i class="fas fa-download text-gray-400"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Discussion Section -->
+                    <div class="border-t pt-8">
+                        <h2 class="text-2xl font-bold text-gray-900 mb-6">Discussion</h2>
+                        
+                        <!-- Comment Form -->
+                        <form class="mb-8">
+                            <div class="mb-4">
+                                <textarea 
+                                    rows="3" 
+                                    class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-medical-blue focus:border-medical-blue"
+                                    placeholder="Share your thoughts or ask a question..."></textarea>
+                            </div>
+                            <div class="flex justify-end">
+                                <button type="submit" class="bg-medical-blue text-white px-6 py-2 rounded-lg hover:bg-blue-600 transition-colors">
+                                    Post Comment
+                                </button>
+                            </div>
+                        </form>
+
+                        <!-- Comments -->
+                        <div class="space-y-6">
+                            <!-- Comment 1 -->
+                            <div class="flex space-x-4">
+                                <img src="https://ui-avatars.com/api/?name=John+Doe&background=3a8edc&color=fff" 
+                                     alt="John Doe" 
+                                     class="w-10 h-10 rounded-full">
+                                <div class="flex-1">
+                                    <div class="bg-gray-50 rounded-xl p-4">
+                                        <div class="flex items-center justify-between mb-2">
+                                            <h4 class="font-medium text-gray-900">John Doe</h4>
+                                            <span class="text-sm text-gray-500">2 hours ago</span>
+                                        </div>
+                                        <p class="text-gray-600">Great explanation of the body systems! Could you elaborate more on how the nervous system interacts with the muscular system?</p>
+                                    </div>
+                                    <div class="flex items-center space-x-4 mt-2 text-sm">
+                                        <button class="text-gray-500 hover:text-medical-blue">
+                                            <i class="far fa-thumbs-up mr-1"></i> 12
+                                        </button>
+                                        <button class="text-gray-500 hover:text-medical-blue">
+                                            Reply
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Comment 2 -->
+                            <div class="flex space-x-4">
+                                <img src="https://ui-avatars.com/api/?name=Sarah+Smith&background=3a8edc&color=fff" 
+                                     alt="Sarah Smith" 
+                                     class="w-10 h-10 rounded-full">
+                                <div class="flex-1">
+                                    <div class="bg-gray-50 rounded-xl p-4">
+                                        <div class="flex items-center justify-between mb-2">
+                                            <h4 class="font-medium text-gray-900">Sarah Smith</h4>
+                                            <span class="text-sm text-gray-500">1 day ago</span>
+                                        </div>
+                                        <p class="text-gray-600">The downloadable resources are very helpful. I especially liked the detailed diagrams in the presentation slides.</p>
+                                    </div>
+                                    <div class="flex items-center space-x-4 mt-2 text-sm">
+                                        <button class="text-gray-500 hover:text-medical-blue">
+                                            <i class="far fa-thumbs-up mr-1"></i> 8
+                                        </button>
+                                        <button class="text-gray-500 hover:text-medical-blue">
+                                            Reply
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8 mt-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">MedEdu</h3>
+                    <p class="text-gray-400">Empowering medical students with comprehensive educational resources.</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">About Us</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Contact</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Connect With Us</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-8 pt-8 border-t border-gray-700 text-center text-gray-400">
+                <p>&copy; 2024 MedEdu. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Add smooth scrolling to all links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Handle comment form submission
+        document.querySelector('form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const textarea = this.querySelector('textarea');
+            if (textarea.value.trim()) {
+                // In a real application, this would send the comment to a server
+                console.log('Comment submitted:', textarea.value);
+                textarea.value = '';
+                alert('Comment posted successfully!');
+            }
+        });
+
+        // Handle like button clicks
+        document.querySelectorAll('.fa-thumbs-up').forEach(button => {
+            button.addEventListener('click', function() {
+                const likeCount = this.parentElement;
+                const currentCount = parseInt(likeCount.textContent.trim());
+                likeCount.innerHTML = `<i class="far fa-thumbs-up mr-1"></i> ${currentCount + 1}`;
+            });
+        });
+    </script>
+</body>
+</html>
